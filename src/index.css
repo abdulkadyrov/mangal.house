@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background: #070505;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #070505;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(214, 170, 85, 0.12), transparent 28rem),
+    radial-gradient(circle at 85% 6%, rgba(102, 20, 33, 0.26), transparent 32rem),
+    #070505;
+  font-family: Manrope, Inter, system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(214, 170, 85, 0.34);
+  color: #fff7e8;
+}
+
+@layer base {
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  input,
+  textarea,
+  select {
+    color-scheme: dark;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28;
+  }
+
+  .section-heading {
+    @apply mx-auto max-w-3xl text-center;
+  }
+
+  .section-heading h2 {
+    @apply mt-4 font-display text-5xl leading-[0.95] text-cream sm:text-6xl lg:text-7xl;
+  }
+
+  .section-heading p {
+    @apply mx-auto mt-5 max-w-2xl text-base leading-8 text-cream/62;
+  }
+
+  .section-kicker {
+    @apply text-xs font-bold uppercase tracking-[0.28em] text-gold;
+  }
+
+  .btn-gold {
+    @apply inline-flex min-h-12 items-center justify-center rounded-full border border-gold/70 bg-gold px-6 py-3 text-center text-sm font-extrabold uppercase tracking-[0.12em] text-coal shadow-gold transition duration-300 hover:-translate-y-0.5 hover:bg-goldLight focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-coal;
+  }
+
+  .btn-outline {
+    @apply inline-flex min-h-12 items-center justify-center rounded-full border border-gold/35 bg-cream/[0.045] px-6 py-3 text-center text-sm font-extrabold uppercase tracking-[0.12em] text-cream backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-gold/10 hover:text-goldLight focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-coal;
+  }
+
+  .dish-card {
+    @apply rounded-[30px] border border-gold/14 bg-cream/[0.055] p-3 shadow-glass backdrop-blur-xl transition duration-300 hover:border-gold/35 hover:bg-cream/[0.075];
+  }
+
+  .menu-card {
+    @apply flex gap-4 rounded-[28px] border border-gold/14 bg-cream/[0.055] p-3 shadow-glass backdrop-blur-xl transition duration-300 hover:border-gold/35 hover:bg-cream/[0.075] sm:p-4;
+  }
+
+  .gallery-tile {
+    @apply relative overflow-hidden rounded-[28px] border border-gold/14 bg-cream/[0.055] text-left shadow-glass;
+  }
+
+  .field-label {
+    @apply block text-xs font-bold uppercase tracking-[0.18em] text-gold;
+  }
+
+  .field-input {
+    @apply mt-2 min-h-12 w-full rounded-2xl border border-cream/12 bg-coal/58 px-4 py-3 text-base normal-case tracking-normal text-cream outline-none transition placeholder:text-cream/28 focus:border-gold/70 focus:bg-coal/78 focus:ring-4 focus:ring-gold/10;
+  }
+
+  .burger-line {
+    @apply absolute left-0 h-0.5 w-6 rounded-full bg-cream transition duration-300;
+  }
+}
+
+.luxury-pattern {
+  background-image:
+    linear-gradient(rgba(246, 234, 215, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(246, 234, 215, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(circle at center, black, transparent 72%);
+}
+
+.premium-image-fallback {
+  position: relative;
+  background:
+    radial-gradient(circle at 30% 22%, rgba(214, 170, 85, 0.3), transparent 32%),
+    radial-gradient(circle at 80% 70%, rgba(102, 20, 33, 0.5), transparent 36%),
+    linear-gradient(135deg, #17080c, #070505 48%, #24160b);
+}
+
+.premium-image-fallback::before {
+  position: absolute;
+  inset: 12px;
+  content: '';
+  border: 1px solid rgba(214, 170, 85, 0.18);
+  border-radius: inherit;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 430px) {
+  .section-shell {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section-heading h2 {
+    font-size: 3.05rem;
+  }
+
+  .menu-card {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 380px) {
+  .btn-gold,
+  .btn-outline {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.72rem;
+  }
+
+  .section-heading h2 {
+    font-size: 2.7rem;
+  }
+}
