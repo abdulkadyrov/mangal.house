@@ -48,7 +48,7 @@ function PopularDishes() {
             </div>
             <div className="pt-5">
               <h3 className="font-display text-2xl leading-tight text-cream">{dish.name}</h3>
-              <p className="mt-3 min-h-20 text-sm leading-6 text-cream/62">{dish.description}</p>
+              <p className="mt-3 min-h-20 text-sm leading-6 text-cream/[.62]">{dish.description}</p>
               <div className="mt-5 flex items-center justify-between">
                 <span className="font-display text-2xl text-goldLight">{dish.price}</span>
                 <a href="#booking" className="rounded-full border border-gold/25 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-gold transition group-hover:bg-gold group-hover:text-coal">

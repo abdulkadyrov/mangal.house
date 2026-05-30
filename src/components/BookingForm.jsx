@@ -52,13 +52,13 @@ function BookingForm() {
           <h2 className="mt-4 font-display text-5xl leading-none text-cream sm:text-6xl">
             Стол для важного вечера
           </h2>
-          <p className="mt-6 text-base leading-8 text-cream/66">
+          <p className="mt-6 text-base leading-8 text-cream/[.66]">
             Укажите дату, время, количество гостей и зону. После отправки можно открыть WhatsApp
             с уже сформированным сообщением для ресторана.
           </p>
-          <div className="mt-8 rounded-[30px] border border-gold/16 bg-wine/16 p-6 shadow-wine">
+          <div className="mt-8 rounded-[30px] border border-gold/[.16] bg-wine/[.16] p-6 shadow-wine">
             <p className="font-display text-3xl text-goldLight">+7 967 955-08-43</p>
-            <p className="mt-2 text-sm text-cream/58">Ответим в WhatsApp и подтвердим бронь.</p>
+            <p className="mt-2 text-sm text-cream/[.58]">Ответим в WhatsApp и подтвердим бронь.</p>
           </div>
         </div>
 
@@ -68,7 +68,7 @@ function BookingForm() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.65 }}
-          className="gsap-reveal rounded-[34px] border border-gold/18 bg-cream/[0.055] p-4 shadow-glass backdrop-blur-xl sm:p-6"
+          className="gsap-reveal rounded-[34px] border border-gold/[.18] bg-cream/[0.055] p-4 shadow-glass backdrop-blur-xl sm:p-6"
         >
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="field-label sm:col-span-2">

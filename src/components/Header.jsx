@@ -33,12 +33,12 @@ function Header() {
   return (
     <header
       className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${
-        isScrolled ? 'border-b border-gold/15 bg-coal/82 shadow-glass backdrop-blur-2xl' : 'bg-coal/35 backdrop-blur-md'
+        isScrolled ? 'border-b border-gold/[.15] bg-coal/[.82] shadow-glass backdrop-blur-2xl' : 'bg-coal/[.35] backdrop-blur-md'
       }`}
     >
       <div className="mx-auto flex h-[74px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:h-24 lg:px-8">
         <a href="#top" className="group flex min-w-0 items-center gap-3" aria-label="Mangal House">
-          <div className="h-12 w-12 shrink-0 overflow-hidden rounded-full border border-gold/35 bg-gold/10 shadow-gold">
+          <div className="h-12 w-12 shrink-0 overflow-hidden rounded-full border border-gold/[.35] bg-gold/10 shadow-gold">
             <PremiumImage
               src="/images/logo.png"
               alt="Логотип Mangal House"
@@ -59,7 +59,7 @@ function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-cream/72 transition hover:text-gold"
+              className="text-sm font-medium text-cream/[.72] transition hover:text-gold"
             >
               {item.label}
             </a>
@@ -72,7 +72,7 @@ function Header() {
           </a>
           <button
             type="button"
-            className="flex h-12 w-12 items-center justify-center rounded-full border border-cream/15 bg-cream/5 text-cream lg:hidden"
+            className="flex h-12 w-12 items-center justify-center rounded-full border border-cream/[.15] bg-cream/5 text-cream lg:hidden"
             aria-label={isOpen ? 'Закрыть меню' : 'Открыть меню'}
             aria-expanded={isOpen}
             onClick={() => setIsOpen((value) => !value)}
@@ -92,14 +92,14 @@ function Header() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 top-[74px] z-40 bg-coal/96 px-4 pb-8 pt-5 backdrop-blur-xl lg:hidden"
+            className="fixed inset-0 top-[74px] z-40 bg-coal/[.96] px-4 pb-8 pt-5 backdrop-blur-xl lg:hidden"
           >
             <motion.nav
               initial={{ y: -16, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -16, opacity: 0 }}
               transition={{ duration: 0.25 }}
-              className="mx-auto max-w-md rounded-[28px] border border-gold/18 bg-cream/[0.055] p-4 shadow-glass"
+              className="mx-auto max-w-md rounded-[28px] border border-gold/[.18] bg-cream/[0.055] p-4 shadow-glass"
             >
               {navItems.map((item, index) => (
                 <motion.a

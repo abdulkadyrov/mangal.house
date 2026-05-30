@@ -48,7 +48,7 @@ function Hero() {
     >
       <div className="absolute inset-0 opacity-[0.16] luxury-pattern" />
       <div className="hero-gold-ring absolute -right-20 top-28 h-64 w-64 rounded-full border border-gold/25 sm:right-4 lg:h-96 lg:w-96" />
-      <div className="luxury-drift absolute left-4 top-32 h-24 w-24 rounded-full border border-wine/60 bg-wine/15 blur-[1px]" />
+      <div className="luxury-drift absolute left-4 top-32 h-24 w-24 rounded-full border border-wine/60 bg-wine/[.15] blur-[1px]" />
       <div className="luxury-drift absolute bottom-24 right-6 h-28 w-28 rounded-full border border-gold/25 bg-gold/10 blur-[1px]" />
 
       <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.02fr_.98fr]">
@@ -78,7 +78,7 @@ function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.85, delay: 0.16 }}
-            className="mt-6 max-w-2xl text-base leading-8 text-cream/76 sm:text-lg"
+            className="mt-6 max-w-2xl text-base leading-8 text-cream/[.76] sm:text-lg"
           >
             Премиальная кавказская и чеченская кухня: стейки на огне, шашлык, галнаш,
             семейные кабинки и спокойная атмосфера для важных вечеров.
@@ -124,7 +124,7 @@ function Hero() {
           className="relative mx-auto w-full max-w-[560px]"
         >
           <div className="absolute -inset-4 rounded-[42px] bg-gold/10 blur-3xl" />
-          <div className="relative overflow-hidden rounded-[38px] border border-gold/18 bg-cream/[0.055] p-3 shadow-gold backdrop-blur-xl">
+          <div className="relative overflow-hidden rounded-[38px] border border-gold/[.18] bg-cream/[0.055] p-3 shadow-gold backdrop-blur-xl">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[30px]">
               <PremiumImage
                 ref={imageRef}
@@ -133,10 +133,10 @@ function Hero() {
                 className="h-full w-full object-cover"
                 fallbackLabel="Главное блюдо"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-coal/72 via-transparent to-transparent" />
-              <div className="absolute bottom-5 left-5 right-5 rounded-3xl border border-cream/12 bg-coal/58 p-4 backdrop-blur-xl">
+              <div className="absolute inset-0 bg-gradient-to-t from-coal/[.72] via-transparent to-transparent" />
+              <div className="absolute bottom-5 left-5 right-5 rounded-3xl border border-cream/[.12] bg-coal/[.58] p-4 backdrop-blur-xl">
                 <p className="font-display text-2xl text-cream">Фирменная мясная доска</p>
-                <p className="mt-1 text-sm text-cream/65">Огонь мангала, овощи гриль и соусы дома.</p>
+                <p className="mt-1 text-sm text-cream/[.65]">Огонь мангала, овощи гриль и соусы дома.</p>
               </div>
             </div>
           </div>

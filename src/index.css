@@ -63,7 +63,7 @@ body {
   }
 
   .section-heading p {
-    @apply mx-auto mt-5 max-w-2xl text-base leading-8 text-cream/62;
+    @apply mx-auto mt-5 max-w-2xl text-base leading-8 text-cream/[.62];
   }
 
   .section-kicker {
@@ -75,19 +75,19 @@ body {
   }
 
   .btn-outline {
-    @apply inline-flex min-h-12 items-center justify-center rounded-full border border-gold/35 bg-cream/[0.045] px-6 py-3 text-center text-sm font-extrabold uppercase tracking-[0.12em] text-cream backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-gold/10 hover:text-goldLight focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-coal;
+    @apply inline-flex min-h-12 items-center justify-center rounded-full border border-gold/[.35] bg-cream/[0.045] px-6 py-3 text-center text-sm font-extrabold uppercase tracking-[0.12em] text-cream backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-gold/10 hover:text-goldLight focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-coal;
   }
 
   .dish-card {
-    @apply rounded-[30px] border border-gold/14 bg-cream/[0.055] p-3 shadow-glass backdrop-blur-xl transition duration-300 hover:border-gold/35 hover:bg-cream/[0.075];
+    @apply rounded-[30px] border border-gold/[.14] bg-cream/[0.055] p-3 shadow-glass backdrop-blur-xl transition duration-300 hover:border-gold/[.35] hover:bg-cream/[0.075];
   }
 
   .menu-card {
-    @apply flex gap-4 rounded-[28px] border border-gold/14 bg-cream/[0.055] p-3 shadow-glass backdrop-blur-xl transition duration-300 hover:border-gold/35 hover:bg-cream/[0.075] sm:p-4;
+    @apply flex gap-4 rounded-[28px] border border-gold/[.14] bg-cream/[0.055] p-3 shadow-glass backdrop-blur-xl transition duration-300 hover:border-gold/[.35] hover:bg-cream/[0.075] sm:p-4;
   }
 
   .gallery-tile {
-    @apply relative overflow-hidden rounded-[28px] border border-gold/14 bg-cream/[0.055] text-left shadow-glass;
+    @apply relative overflow-hidden rounded-[28px] border border-gold/[.14] bg-cream/[0.055] text-left shadow-glass;
   }
 
   .field-label {
@@ -95,7 +95,7 @@ body {
   }
 
   .field-input {
-    @apply mt-2 min-h-12 w-full rounded-2xl border border-cream/12 bg-coal/58 px-4 py-3 text-base normal-case tracking-normal text-cream outline-none transition placeholder:text-cream/28 focus:border-gold/70 focus:bg-coal/78 focus:ring-4 focus:ring-gold/10;
+    @apply mt-2 min-h-12 w-full rounded-2xl border border-cream/[.12] bg-coal/[.58] px-4 py-3 text-base normal-case tracking-normal text-cream outline-none transition placeholder:text-cream/[.28] focus:border-gold/70 focus:bg-coal/[.78] focus:ring-4 focus:ring-gold/10;
   }
 
   .burger-line {

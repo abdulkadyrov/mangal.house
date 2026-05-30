@@ -35,7 +35,7 @@ function Gallery() {
               className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
               fallbackLabel={item.title}
             />
-            <span className="absolute inset-x-3 bottom-3 rounded-2xl border border-cream/10 bg-coal/58 px-4 py-3 text-left font-display text-xl text-cream backdrop-blur-md">
+            <span className="absolute inset-x-3 bottom-3 rounded-2xl border border-cream/10 bg-coal/[.58] px-4 py-3 text-left font-display text-xl text-cream backdrop-blur-md">
               {item.title}
             </span>
           </motion.button>
@@ -48,7 +48,7 @@ function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[80] flex items-center justify-center bg-coal/92 p-4 backdrop-blur-xl"
+            className="fixed inset-0 z-[80] flex items-center justify-center bg-coal/[.92] p-4 backdrop-blur-xl"
             onClick={() => setActiveImage(null)}
           >
             <motion.div
@@ -60,7 +60,7 @@ function Gallery() {
             >
               <button
                 type="button"
-                className="absolute right-4 top-4 z-10 h-11 w-11 rounded-full bg-coal/72 text-2xl text-cream backdrop-blur"
+                className="absolute right-4 top-4 z-10 h-11 w-11 rounded-full bg-coal/[.72] text-2xl text-cream backdrop-blur"
                 onClick={() => setActiveImage(null)}
                 aria-label="Закрыть изображение"
               >

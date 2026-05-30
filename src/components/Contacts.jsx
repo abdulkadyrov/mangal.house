@@ -20,7 +20,7 @@ function Contacts() {
             ].map(([label, value]) => (
               <div key={label} className="rounded-[24px] border border-cream/10 bg-cream/[0.045] p-5">
                 <p className="text-xs uppercase tracking-[0.22em] text-gold">{label}</p>
-                <p className="mt-2 text-base leading-7 text-cream/78">{value}</p>
+                <p className="mt-2 text-base leading-7 text-cream/[.78]">{value}</p>
               </div>
             ))}
           </div>
@@ -34,7 +34,7 @@ function Contacts() {
           </div>
         </div>
 
-        <div className="gsap-reveal overflow-hidden rounded-[34px] border border-gold/16 bg-cream/[0.055] p-2 shadow-glass">
+        <div className="gsap-reveal overflow-hidden rounded-[34px] border border-gold/[.16] bg-cream/[0.055] p-2 shadow-glass">
           <iframe
             title="Карта Mangal House"
             src="https://www.google.com/maps?q=%D0%9A%D0%B0%D0%B4%D1%8B%D1%80%D0%BE%D0%B2%D0%B0%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%202%D0%91%2C%20%D0%A6%D0%BE%D1%86%D0%B8-%D0%AE%D1%80%D1%82&output=embed"

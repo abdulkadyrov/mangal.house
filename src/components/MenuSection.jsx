@@ -29,7 +29,7 @@ function MenuSection() {
             className={`min-h-12 shrink-0 rounded-full border px-5 text-sm font-semibold transition ${
               activeCategory === category.id
                 ? 'border-gold bg-gold text-coal shadow-gold'
-                : 'border-cream/12 bg-cream/[0.04] text-cream/74 hover:border-gold/45 hover:text-gold'
+                : 'border-cream/[.12] bg-cream/[0.04] text-cream/[.74] hover:border-gold/[.45] hover:text-gold'
             }`}
           >
             {category.title}
@@ -46,10 +46,10 @@ function MenuSection() {
           transition={{ duration: 0.35 }}
           className="mt-8 grid gap-4 lg:grid-cols-[0.72fr_1.28fr]"
         >
-          <aside className="gsap-reveal rounded-[30px] border border-gold/16 bg-wine/18 p-6 shadow-wine">
+          <aside className="gsap-reveal rounded-[30px] border border-gold/[.16] bg-wine/[.18] p-6 shadow-wine">
             <p className="section-kicker">{selectedCategory.title}</p>
             <h3 className="mt-4 font-display text-4xl text-cream">{selectedCategory.subtitle}</h3>
-            <p className="mt-5 text-sm leading-7 text-cream/62">
+            <p className="mt-5 text-sm leading-7 text-cream/[.62]">
               Все позиции можно заказать в зал, VIP-кабинку или уточнить через WhatsApp. Цены и
               состав легко менять в файле данных проекта.
             </p>
@@ -78,11 +78,11 @@ function MenuSection() {
                 <div className="min-w-0 flex-1">
                   <div className="flex items-start justify-between gap-3">
                     <h3 className="font-display text-2xl leading-tight text-cream">{item.name}</h3>
-                    <span className="rounded-full bg-gold/12 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-goldLight">
+                    <span className="rounded-full bg-gold/[.12] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-goldLight">
                       {item.badge}
                     </span>
                   </div>
-                  <p className="mt-2 text-sm leading-6 text-cream/58">{item.description}</p>
+                  <p className="mt-2 text-sm leading-6 text-cream/[.58]">{item.description}</p>
                   <p className="mt-4 font-display text-2xl text-goldLight">{item.price}</p>
                 </div>
               </motion.article>

@@ -14,7 +14,7 @@ const PremiumImage = forwardRef(function PremiumImage(
       >
         <div className="px-4 text-center">
           <span className="block font-display text-2xl text-goldLight">{fallbackLabel}</span>
-          <span className="mt-2 block text-[10px] uppercase tracking-[0.32em] text-cream/45">
+          <span className="mt-2 block text-[10px] uppercase tracking-[0.32em] text-cream/[.45]">
             premium cuisine
           </span>
         </div>
